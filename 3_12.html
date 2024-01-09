@@ -11,18 +11,14 @@
     2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97 -->
     <script>
       for (let i = 2; i <= 100; i++) {
-        //2에서 100까지
+        //2에서 100
         for (let j = 2; j < i; j++) {
           //2에서 i까지
-          if (i % j == 0) {
-            //i 나누기 j의 나머지가 0일때
-            //break; //break문 : for문이나 while문의 반복 루프가 진행되는 도중에 루프를 빠져나가고자 할 때 사용
-            continue; //continue문 : 반복 루프에서 실행되는 문장들을 건너뛰고 싶을 때 사용
-          } else {
-            document.write(i + " ");
-            break;
-          }
         }
+        if (i % j != 0) {
+          document.write(i);
+        }
+        continue;
       }
     </script>
   </body>

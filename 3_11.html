@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3_11</title>
+  </head>
+  <body>
+    <!--소수는 1과 자기자신만으로 나누어 떨어지는 1보다 큰 양의 정수를 의미합니다.
+    주어진 수가 소수인지를 판별하는 프로그램을 작성하시오. 
+    실행 결과1(주어진 수가 소수인 경우) 
+    3은(는) 소수이다.
+    실행 결과 2(주어진 수가소수가 아닌경우)
+    8은(는) 소수가 아니다. -->
+    <script>
+      let i = 6;
+      for (j = 2; j < i; j++) {
+        if (i % j == 0) {
+          document.write(i + "은(는) 소수가 아니다.");
+          break;
+        } else {
+          document.write(i + "은(는) 소수이다.");
+          break;
+        }
+      }
+    </script>
+  </body>
+</html>

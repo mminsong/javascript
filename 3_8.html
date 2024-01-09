@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3_8</title>
+  </head>
+  <body>
+    <!--문제 7에 <table>, <tr>, <th>, <td> 태그를 적용하여 실행 결과에 나타난 것과 같은 형태로 출력하는 프로그램을 작성하시오.-->
+    <p id="show"></p>
+    <script>
+      let text = "";
+      text += "<table border='1'>";
+      text += "<tr><th>마일</th><th>킬로미터</th></tr>";
+      let mile = 1;
+      let km = mile * 1.609344;
+      while (mile <= 100) {
+        //mile이 100이하
+        if (mile % 2 == 1) {
+          //mile이 홀수인 경우
+          text += "<tr><td>" + mile + "</td><td>" + km + "</td></tr>";
+        }
+        mile++;
+      }
+      text += "</table>";
+      document.getElementById("show").innerHTML = text;
+    </script>
+  </body>
+</html>

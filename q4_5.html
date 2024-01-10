@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>q4_5</title>
+  </head>
+  <body>
+    <!--다음은 자바스크립트의 호이스팅에 관련된 문제입니다. 아래 프로그램에서는 오류가 발생합니다. 오류가 발생되는 원인에 대해 설명하시오.-->
+  </body>
+  <script>
+    let x;
+    x = add(10, 20);
+    document.write(x);
+
+    const add = function (a, b) {
+      return a + b;
+    };
+  </script>
+</html>
+<!--익명 함수의 경우 일반적인 함수와는 달리 함수를 정의하여 변수를 저장해서 사용하는 형태이므로
+반드시 함수 호출 이전에 익명 함수를 선언하여 사용해야함-->

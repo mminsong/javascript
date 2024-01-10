@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>q4_9</title>
+  </head>
+  <body>
+    <!--다음은 arguments 객체를 이용하여 최솟값을 구하는 프로그램입니다. 빈 칸을 채워보세요.-->
+  </body>
+  <p id="show"></p>
+  <script>
+    function minValue() {
+      let min = Infinity;
+      for (let i = 0; i < arguments.length; i++) {
+        if (arguments[i] < min) {
+          min = arguments[i];
+        }
+      }
+      return min;
+    }
+    let x = minValue(-38, 36, 7, -12, -450);
+    document.getElementById("show").innerHTML = "최솟값: " + x;
+  </script>
+</html>

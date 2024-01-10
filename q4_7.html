@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>q4_7</title>
+  </head>
+  <body>
+    <!--다음은 매개변수의 기본 값에 관련된 문제입니다. 프로그램의 실행 결과는?-->
+  </body>
+  <p id="show"></p>
+  <script>
+    function mul(x, y = 10, z = 20) {
+      return x * y * z;
+    }
+    document.getElementById("show").innerHTML = mul(3, 2);
+  </script>
+</html>

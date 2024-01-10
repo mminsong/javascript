@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>q4_3</title>
+  </head>
+  <body>
+    <!-- 다음은 Q4-2에 <table> 태그를 적용하여 표 형태로 출력하는 프로그램입니다. 빈칸을 채워보세요. -->
+  </body>
+  <p id="show"></p>
+  <script>
+    function inch2cm(x) {
+      let result = x * 2.54;
+      return result;
+    }
+    let inch, cm;
+    let text = "";
+    text += "<table border='1'>";
+
+    text += "<tr><td>인치</td><td>센티미터</td></tr>";
+    for (let inch = 1; inch <= 10; inch++) {
+      cm = inch2cm(inch);
+      text += "<tr><td>" + inch + "</td><td>" + cm + "</td></tr>";
+    }
+    text += "</table>";
+    document.getElementById("show").innerHTML = text;
+  </script>
+</html>

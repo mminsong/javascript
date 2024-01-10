@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>q4_8</title>
+  </head>
+  <body>
+    <!--다음은 나머지 매개변수를 이용하여 점수의 평균을 구하는 프로그램입니다. 빈 칸을 채워보세요.-->
+  </body>
+  <p id="show"></p>
+  <script>
+    function avg(...scores) {
+      let sum = 0;
+      for (let score of scores) {
+        sum += score;
+      }
+      let result = sum / scores.length;
+      return result;
+    }
+    let average = avg(87, 96, 75, 80, 90);
+    document.getElementById("show").innerHTML = "평군: " + average;
+  </script>
+</html>

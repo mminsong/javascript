@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>q4_10</title>
+  </head>
+  <body>
+    <!--다음은 전역 스코프와 함수 스코프에 관련된 문제입니다. 프로그램의 실행 결과는?-->
+  </body>
+  <script>
+    let x = 10;
+    function func() {
+      let x = 20;
+      document.write(x + " "); //20
+    }
+    func();
+    document.write(x); //10
+  </script>
+</html>

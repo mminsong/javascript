@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>q4_12</title>
+  </head>
+  <body>
+    <!--다음은 자바스크립트 스코프에 관련된 문제입니다. 프로그램의 실행 결과는?-->
+  </body>
+  <script>
+    function func() {
+      let x = 20;
+      if (true) {
+        let x = 30;
+      }
+      document.write(x + " "); //20
+    }
+    let x = 10;
+    func(); //20
+    document.write(x); //10
+  </script>
+</html>

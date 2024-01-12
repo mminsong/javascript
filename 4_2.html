@@ -11,6 +11,17 @@
 반지름: 8
 원의 둘레: 50.24
 원의 넓이: 200.96-->
-    <script></script>
+    <script>
+      function c_line(a) {
+        return 2 * 3.14 * a;
+      }
+      function c_area(a) {
+        return 3.14 * a * a;
+      }
+      let r = 8;
+      document.write("반지름: " + r + "<br>");
+      document.write("원의 둘레: " + c_line(r) + "<br>");
+      document.write("원의 넓이: " + c_area(r) + "<br>");
+    </script>
   </body>
 </html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4_1</title>
+  </head>
+  <body>
+    <!--주어진 삼각형의 너비와 높이에 대해 삼각형의 넓이를 구하는 프로그램을 작성하시오. 단, 1개 이상의 함수를 정의하여야 합니다.
+실행 결과(너비가 5, 높이가 8인 경우)
+삼각형의 너비: 5
+삼각형의 높이: 8
+삼각형의 넓이: 20-->
+    <p id="show"></p>
+    <script>
+      function tri(a, b) {
+        return (a * b) / 2;
+      }
+      let a = 5;
+      let b = 8;
+
+      document.write("삼각형의 너비: " + a + "<br>");
+      document.write("삼각형의 높이: " + b + "<br>");
+
+      let area = tri(a, b);
+      document.write("삼각형의 넓이: " + area);
+    </script>
+  </body>
+</html>

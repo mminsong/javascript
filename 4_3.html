@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4_3</title>
+  </head>
+  <body>
+    <!-- 시작수(n1)와 끝 수(n2)가 주어졌을 때 n1~n2의 정수 합계를 구하는 프로그램을 작성하시오.
+         단, 1개 이상의 함수를 정의하여야 합니다.-->
+    <script>
+      function sum(n1, n2) {
+        return ((n1 + n2) * (n2 - n1)) / 2 + (n1 + n2) / 2;
+      }
+      let n1 = 100;
+      let n2 = 200;
+      document.write("합: " + sum(n1, n2));
+    </script>
+  </body>
+</html>

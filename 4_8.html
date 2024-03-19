@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4_8</title>
+  </head>
+  <body>
+    <!-- 출생 연월일이 주어졌을 때 나이를 게산하는 프로그램을 작성하시오. 단, 1개 이상의 함수를 정의하여야 함.
+         나이 계산 방법(오늘 날짜가 2023년 7월 20일이라고 가정)-->
+    <script>
+      function age(a, b, c) {
+        if (b < 7) return 2023 - a;
+        else if (b == 7) {
+          if (c <= 20) return 2023 - a;
+          else return 2023 - a - 1;
+        } else return 2023 - a - 1;
+      }
+
+      let a = 2000;
+      let b = 8;
+      let c = 10;
+      document.write("오늘 날짜: 2023년 7월 20일" + "<br>");
+      document.write(
+        "출생 년월일: " + a + "년 " + b + "월 " + c + "일" + "<br>"
+      );
+      document.write("나이: " + age(a, b, c));
+    </script>
+  </body>
+</html>

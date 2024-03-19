@@ -9,17 +9,20 @@
     <!-- 물건 구매가가 주어졌을 때 할인율에 따라 지불 금액을 계산하는 프로그램을 작성하시오.
          단, 1개이상의 함수를 정의하여야 함. -->
     <script>
+      let a = 20000;
       function sale(a) {
         if (a >= 10000 && a < 50000) return a * 0.05;
         else if (a >= 50000 && a < 300000) return a * 0.075;
         else return a * 0.1;
       }
-      let a = 10000;
-      let b = 50000;
-      let c = 300000;
-      document.write("할인율: " + sale(a) + "</br>");
-      document.write("할인율: " + sale(b) + "</br>");
-      document.write("할인율: " + sale(c));
+      function pay(a) {
+        if (a >= 10000 && a < 50000) return a - a * 0.05;
+        else if (a >= 50000 && a < 300000) return a - a * 0.075;
+        else return a - a * 0.1;
+      }
+      document.write(
+        "할인율: " + sale(a) + "원" + "<br>" + "지불금액: " + pay(a) + "원"
+      );
     </script>
   </body>
 </html>

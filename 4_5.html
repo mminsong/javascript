@@ -3,7 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>4_5</title>
   </head>
-  <body></body>
+  <body>
+    <!-- 책 값, 할인율(%), 배송료가 주어졌을 때 결제 금액을 계산하는 프로그램을 작성하시오. 
+         단, 1개 이상의 함수를 정의하여야 합니다.-->
+    <script>
+      function pay(a, b, c) {
+        return a - a * (b / 100) + c;
+      }
+      let a = 25000;
+      let b = 10;
+      let c = 5000;
+      document.write("책 값: " + a + "원" + "<br>");
+      document.write("할인율: " + b + "%" + "<br>");
+      document.write("배송료: " + c + "원" + "<br>");
+      document.write("결제 금액: " + pay(a, b, c) + "원");
+    </script>
+  </body>
 </html>

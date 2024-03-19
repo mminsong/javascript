@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5_2</title>
+  </head>
+  <body>
+    <p id="show"></p>
+    <script>
+      const book = {
+        title: "꿈과 사랑",
+        author: "정영진",
+        price: "15000",
+        book1: function () {
+          return "책 제목: " + this.title + "<br>" + "저자: " + this.author;
+        },
+        showPrice: function () {
+          return this.title + "의 가격은 " + this.price + "원 입니다.";
+        },
+      };
+      document.getElementById("show").innerHTML = book.showPrice();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5_3</title>
+  </head>
+  <body>
+    <script>
+      function Book(title, author, price) {
+        (this.title = title), (this.author = author), (this.price = price);
+      }
+      const book1 = new Book("자바스크립트 기초", "김수정", 25000);
+      text = "";
+      for (x in book1) {
+        text += book1[x] + "<br>";
+      }
+      document.write(text);
+    </script>
+  </body>
+</html>

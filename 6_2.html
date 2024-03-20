@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6_2</title>
+  </head>
+  <body>
+    <p id="show"></p>
+    <script>
+      let x = 100;
+      let text = "";
+      for (let y = -3; y <= 3; y++) {
+        if (x / y == Infinity) text += "무한대<br>";
+        else {
+          let z = x / y;
+          text += z.toFixed(2) + "<br>";
+        }
+      }
+      document.getElementById("show").innerHTML = text;
+    </script>
+  </body>
+</html>

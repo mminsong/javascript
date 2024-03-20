@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>q7_12</title>
+  </head>
+  <body>
+    <script>
+      let str1 = "토끼 거북이 토끼 거북이 토끼 거북이";
+      let idx = str1.indexOf("토끼", 3);
+      let arr = str1.match(/거/g);
+
+      document.write(idx + ", ");
+      document.write(arr.length);
+    </script>
+  </body>
+</html>

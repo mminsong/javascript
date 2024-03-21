@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8_10</title>
+  </head>
+  <body>
+    <script>
+      let str1 = "abc abcxy abxyz abcccxyz abcxyxyyxyy";
+      let pattern = /abc+(xy+)+/g;
+      let result = str1.match(pattern);
+
+      document.write(result);
+    </script>
+  </body>
+</html>

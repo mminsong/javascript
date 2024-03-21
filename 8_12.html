@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8_12</title>
+  </head>
+  <body>
+    <script>
+      let str1 = "10 100 1000 10000 20 200 2000 20000";
+      let pattern = /10?\d{3,4}/g;
+      let result = str1.match(pattern);
+
+      document.write(result);
+    </script>
+  </body>
+</html>

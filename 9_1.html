@@ -8,12 +8,19 @@
   <body>
     <p id="show"></p>
     <script>
-      const arr = new Array(5);
+      let scores = [90, 85, 70, 86, 97];
 
-      for (var i = 0; i < arr.length; i++) {
-        arr[i] = new Array(3);
+      let sum = 0;
+      let avg;
+      for (score of scores) {
+        sum += score;
       }
-      document.getElementById("show").innerHTML = arr;
+      avg = sum / scores.length;
+
+      let text = "";
+      text += "합계: " + sum + "<br>";
+      text += "평균: " + avg;
+      document.getElementById("show").innerHTML = text;
     </script>
   </body>
 </html>

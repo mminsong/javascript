@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10_1</title>
+  </head>
+  <body>
+    <p id="show"></p>
+    <script>
+      let numbers = [3, 7, 12, 3, 12, 3];
+
+      const number_set = new Set(numbers);
+      text = "";
+      for (let number of number_set) {
+        text += number + "<br>";
+      }
+      document.getElementById("show").innerHTML = text;
+    </script>
+  </body>
+</html>

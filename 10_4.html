@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10_4</title>
+  </head>
+  <body>
+    <h3>요리 레시피</h3>
+    <p id="show"></p>
+    <script>
+      const recipe = new Map([
+        ["오이", 100],
+        ["당근", 50],
+        ["양파", 30],
+      ]);
+      let text = "<ul>";
+      recipe.forEach(function (value, key) {
+        text += "<li>" + key + " : " + value + "g</li>";
+      });
+      text += "</ul>";
+      document.getElementById("show").innerHTML = text;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>11_1</title>
+  </head>
+  <body>
+    <form name="form1">
+      <select id="sel">
+        <option>사과</option>
+        <option>귤</option>
+        <option>바나나</option>
+        <option>수박</option>
+      </select>
+    </form>
+    <p id="show"></p>
+    <script>
+      let x = document.getElementById("sel").length;
+      document.getElementById("show").innerHTML = x;
+    </script>
+  </body>
+</html>

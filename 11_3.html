@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>11_3</title>
+  </head>
+  <body>
+    <p>
+      <a href="https://naver.com">네이버</a><br />
+      <a href="https://google.com">구글</a>
+    </p>
+    <button onclick="getURL()">확인</button>
+    <p id="show"></p>
+    <script>
+      function getURL() {
+        const href = document.links[0].href;
+        document.getElementById("show").innerHTML = href;
+      }
+    </script>
+  </body>
+</html>

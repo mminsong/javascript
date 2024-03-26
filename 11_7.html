@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>11_7</title>
+  </head>
+  <body>
+    <img id="image1" onclick="changeImage()" src="light_off.png" />
+    <p>
+      <button onclick="lightOn()">켜기</button>
+      <button onclick="lightOff()">끄기</button>
+    </p>
+    <script>
+      function lightOn() {
+        const image = document.getElementById("image1");
+        image.src = "light_on.png";
+      }
+      function lightOff() {
+        const image = document.getElementById("image1");
+        image.src = "light_off.png";
+      }
+    </script>
+  </body>
+</html>

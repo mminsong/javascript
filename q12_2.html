@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>q12_2</title>
+  </head>
+  <body>
+    <button id="btn" onclick="func()">클릭하세요!</button>
+    <p id="show"></p>
+    <script>
+      function func() {
+        document.getElementById("show").innerHTML = event.target.nodeName;
+      }
+    </script>
+  </body>
+</html>

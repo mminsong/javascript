@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>q12_4</title>
+  </head>
+  <body>
+    아이디 :
+    <input type="text" onfocus="focusFunc(this)" onblur="blurFunc(this)" />
+    <script>
+      function focusFunc(x) {
+        x.style.backgroundColor = "pink";
+      }
+      function blurFunc(x) {
+        x.value = x.value.toUpperCase();
+      }
+    </script>
+  </body>
+</html>

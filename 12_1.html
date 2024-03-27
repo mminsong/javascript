@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12_1</title>
+  </head>
+  <body>
+    <button onclick="showCurrentTime()">현재시간은?</button>
+    <p id="show"></p>
+    <script>
+      function showCurrentTime() {
+        const now = new Date();
+        const year = now.getFullYear();
+        const month = now.getMonth() + 1;
+        const date = now.getDate();
+        const hour = now.getHours();
+        const min = now.getMinutes();
+        const second = now.getSeconds();
+
+        let text = year + "/" + month + "/" + date + " ";
+        text += hour + ":" + min + ":" + second;
+        document.getElementById("show").innerHTML = text;
+      }
+    </script>
+  </body>
+</html>

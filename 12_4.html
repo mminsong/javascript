@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12_4</title>
+  </head>
+  <body>
+    <input type="text" id="input1" placeholder="키를 입력하세요!" />
+    <p id="show"></p>
+    <script>
+      const input1 = document.getElementById("input1");
+      input1.addEventListener("keydown", onKeyDown);
+      input1.addEventListener("keypress", onKeyPress);
+      input1.addEventListener("keyup", onKeyUp);
+      let text;
+      function onKeyDown(event) {
+        text += "keydown : " + event.key + "<br>";
+      }
+      function onKeyPress(event) {
+        text += "keypress : " + event.key + "<br>";
+      }
+      function onKeyUp(event) {
+        text += "keyup : " + event.key + "<br>";
+        document.getElementById("show").innerHTML = text;
+      }
+    </script>
+  </body>
+</html>

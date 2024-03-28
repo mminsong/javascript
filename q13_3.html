@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>q13_3</title>
+  </head>
+  <body>
+    <button onclick="openWindow()">새 창 열기</button>
+    <button onclick="getFocus()">포커스 얻기</button>
+    <script>
+      function openWindow() {
+        win = window.open("https://www.naver.com", "width=400", "height=200");
+      }
+      function getFocus() {
+        win.focus();
+      }
+    </script>
+  </body>
+</html>

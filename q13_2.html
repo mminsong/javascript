@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>q13_2</title>
+  </head>
+  <body>
+    <button onclick="openWindow()">새 창 열기</button>
+    <button onclick="closeWindow()">창 닫기</button>
+    <script>
+      function openWindow() {
+        win = window.open("https://www.naver.com", "_blank");
+      }
+      function closeWindow() {
+        win.close();
+      }
+    </script>
+  </body>
+</html>
